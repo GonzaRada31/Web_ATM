@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferencias</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/transferencias.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/saldo.js"></script>
+    <script defer src="assets/js/transferencias.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Cajero Automático</h1>
+    </header>
+
+    <div class="container">
+        <h2>Elija el tipo de transferencia</h2>
+
+        <div class="grid-menu">
+            <button class="menu-button" onclick="seleccionarOpcion('CBU')">A un CBU</button>
+            <button class="menu-button" onclick="seleccionarOpcion('CVU')">A un CVU</button>
+            <button class="menu-button" onclick="seleccionarOpcion('Alias')">A un Alias</button>
+        </div>
+
+        <div id="transferencia-form" style="display: none; margin-top: 20px;">
+            <input type="text" id="destinatario" placeholder="Ingrese CBU/CVU/Alias">
+            <input type="number" id="monto-transferencia" placeholder="Monto a transferir">
+            <button onclick="procesarTransferencia()" class="menu-button">Confirmar</button>
+        </div>
+
+        <div class="cancel-button-container">
+            <button class="cancel-button" onclick="window.location.href='menu_principal.html'">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>

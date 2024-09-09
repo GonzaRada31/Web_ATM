@@ -1,0 +1,57 @@
+/* Mantén los estilos globales en styles.css */
+
+/* Estilo específico de la pantalla de Salir */
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Botones de Confirmar y Cancelar */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-button {
+    background-color: white;
+    color: #290979;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+}
+
+.menu-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+.cancel-button {
+    background-color: white;
+    color: #ff4800;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+}
+
+.cancel-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .menu-button, .cancel-button {
+        width: 200px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,65 @@
+/* Flexbox para mostrar botones en dos columnas */
+.flex-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Mayor espacio entre las filas de botones */
+    padding: 20px;
+}
+
+/* Agrupar botones en filas con dos columnas */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones dentro de la fila */
+}
+
+/* Estilo de los botones del menú */
+.menu-button {
+    background-color: white;
+    color: #290979;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px; /* Ajustamos el padding para reducir la altura interna */
+    width: 100px;   /* Ancho de los botones */
+    height: 80px;   /* Reducimos la altura */
+    text-align: center;
+    font-size: 1.2rem; /* Tamaño del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Cambia el color al hacer hover */
+.menu-button:hover {
+    background-color: #bd56ec; /* Fondo cambia a azul claro */
+    color: white; /* Texto cambia a blanco */
+    border-color: white; /* Mantiene el borde blanco */
+}
+
+/* Responsividad para pantallas más grandes */
+@media (min-width: 768px) {
+    .menu-button {
+        width: 180px;
+        height: 100px; /* Ajustamos la altura para pantallas más grandes */
+        font-size: 1.4rem; /* Ajustamos el tamaño del texto */
+    }
+}
+
+/* Flexbox: en pantallas pequeñas, botones en una columna */
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-button {
+        width: 80%;
+        height: auto;
+        font-size: 1.3rem; /* Ajusta tamaño en pantallas pequeñas */
+    }
+}

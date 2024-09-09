@@ -1,0 +1,110 @@
+/* Estilo general de la pantalla */
+body {
+    background: linear-gradient(135deg, #290979, #00d4ff);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Título de la pantalla */
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Grid para los botones */
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Estilo de los botones del menú */
+.menu-button {
+    background-color: white;
+    color: #290979;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+    height: 70px;
+}
+
+.menu-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+/* Estilo para el input de otro monto */
+#otro-monto {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+/* Contenedor para el input de otro monto */
+#otro-monto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: none; /* Por defecto, oculto */
+}
+
+#otro-monto-container .menu-button {
+    margin-left: 10px;
+}
+
+/* Estilo especial para el botón de Cancelar */
+.cancel-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: white;
+    color: #ff4800;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+}
+
+.cancel-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .menu-button, .cancel-button {
+        width: 200px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,61 @@
+/* Mantén los estilos globales en styles.css */
+
+/* Estilo específico de la pantalla de Cambio de Clave */
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo del formulario de claves */
+#clave-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#clave-form input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin: 10px 0;
+    width: 80%;
+}
+
+#clave-form .menu-button {
+    margin-top: 20px;
+    width: 200px;
+}
+
+/* Botón cancelar */
+.cancel-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: white;
+    color: #ff4800;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+}
+
+.cancel-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .menu-button, .cancel-button {
+        width: 200px;
+        height: 80px;
+    }
+}

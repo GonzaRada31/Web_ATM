@@ -1,0 +1,24 @@
+/* Estilos específicos para la pantalla de insertar tarjeta */
+.tarjeta {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.tarjeta-img {
+    width: 150px;
+    position: relative;
+    top: 0;
+    transition: top 2s ease;
+}
+
+/* Animación de deslizamiento de la tarjeta */
+@keyframes deslizarTarjeta {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 150px; /* Ajustar para simular la inserción */
+    }
+}

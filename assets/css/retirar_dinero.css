@@ -1,0 +1,63 @@
+/* Grid para los botones */
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Estilo de los botones del menú */
+.menu-button {
+    background-color: white;
+    color: #290979;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+    height: 70px;
+}
+
+.menu-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+/* Estilo especial para el botón de Cancelar */
+.cancel-button {
+    color: #ff4800; /* Cambia el color del texto si quieres */
+}
+
+.cancel-button:hover {
+    background-color: #bd56ec;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        width: 200px;
+        height: 80px;
+    }
+}
+
+#otro-monto {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+#otro-monto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#otro-monto-container .menu-button {
+    margin-left: 10px;
+}

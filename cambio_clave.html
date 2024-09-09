@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Clave</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/cambio_clave.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="assets/js/cambio_clave.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Cajero Automático</h1>
+    </header>
+
+    <div class="container">
+        <h2>Cambio de Clave</h2>
+
+        <div id="clave-form">
+            <input type="password" id="clave-actual" placeholder="Clave Actual">
+            <input type="password" id="nueva-clave" placeholder="Nueva Clave">
+            <input type="password" id="confirmar-clave" placeholder="Confirmar Nueva Clave">
+            <button class="menu-button" onclick="cambiarClave()">Confirmar</button>
+        </div>
+
+        <div class="cancel-button-container">
+            <button class="cancel-button" onclick="window.location.href='menu_principal.html'">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>

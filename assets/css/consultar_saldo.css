@@ -1,0 +1,55 @@
+/* Mantiene el estilo global de fondo */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Barra de carga */
+.loading-bar {
+    width: 80%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    animation: load-bar 3s ease-in-out forwards;
+}
+
+/* Animación de la barra de carga */
+@keyframes load-bar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+
+/* Estilo para el loader */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #290979;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

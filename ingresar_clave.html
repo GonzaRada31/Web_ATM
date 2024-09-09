@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/ingresar_clave.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>Ingresar Clave - Simulador de Cajero Automático</title>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Cajero Automático</h1>
+    </header>
+
+    <div class="container">
+        <h2>Ingrese su clave numérica de 4 dígitos</h2>
+
+        <!-- Campo para ingresar la clave -->
+        <input type="password" maxlength="4" class="clave-input" id="clave" placeholder="****" pattern="\d*" inputmode="numeric">
+        
+        <div class="button-group">
+            <button class="menu-button" onclick="confirmarClave()">Confirmar</button>
+            <button class="menu-button" onclick="window.location.href='index.html'">Cancelar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/clave.js"></script>
+</body>
+</html>

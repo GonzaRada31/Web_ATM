@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/menu_principal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Cajero Automático</h1>
+        <h2>Seleccione una opción</h2>
+
+        <div class="flex-menu">
+            <div class="row">
+                <button onclick="navegar('consultar_saldo.html')" class="menu-button">
+                    <span>Consultar Saldo</span>
+                </button>
+
+                <button onclick="navegar('retirar_dinero.html')" class="menu-button">
+                    <span>Retirar Dinero</span>
+                </button>
+            </div>
+
+            <div class="row">
+                <button onclick="navegar('depositar_dinero.html')" class="menu-button">
+                    <span>Depositar Dinero</span>
+                </button>
+
+                <button onclick="navegar('transferencias.html')" class="menu-button">
+                    <span>Transferencias</span>
+                </button>
+            </div>
+
+            <div class="row">
+                <button onclick="navegar('cambio_clave.html')" class="menu-button">
+                    <span>Cambio de Clave</span>
+                </button>
+
+                <button onclick="salir()" class="menu-button">
+                    <span>Salir</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <p>&copy; 2024 Simulador de Cajero Automático</p>
+    </footer> -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/salir.js"></script>
+</body>
+</html>

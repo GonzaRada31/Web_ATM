@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Saldo</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/consultar_saldo.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/saldo.js"></script> <!-- Archivo global del saldo -->
+    <script defer src="assets/js/consultar_saldo.js"></script>
+</head>
+<body onload="consultarSaldo()">
+    <header>
+        <h1>Simulador de Cajero Automático</h1>
+    </header>
+
+    <div class="container">
+        <h2>Estamos procesando sus datos...</h2>
+        <div id="procesando" class="loader"></div>
+    </div>
+</body>
+</html>

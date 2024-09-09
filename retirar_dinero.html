@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirar Dinero</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/retirar_dinero.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/saldo.js"></script> <!-- Archivo global de saldo -->
+    <script defer src="assets/js/retirar_dinero.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Cajero Automático</h1>
+    </header>
+
+    <div class="container">
+        <h2>Seleccione el monto a retirar</h2>
+
+        <div class="grid-menu">
+            <button class="menu-button" onclick="retirarDinero(5000)">$5.000</button>
+            <button class="menu-button" onclick="retirarDinero(10000)">$10.000</button>
+            <button class="menu-button" onclick="retirarDinero(20000)">$20.000</button>
+            <button class="menu-button" onclick="retirarDinero(50000)">$50.000</button>
+            <button class="menu-button" onclick="retirarDinero(100000)">$100.000</button>
+            <button class="menu-button" onclick="mostrarOtroMonto()">Otro Monto</button>
+        </div>
+
+        <!-- Campo para ingresar el monto personalizado -->
+        <div id="otro-monto-container" style="display: none; margin-top: 20px;">
+            <input type="number" id="otro-monto" placeholder="Ingrese monto" />
+            <button onclick="procesarOtroMonto()" class="menu-button">Confirmar</button>
+        </div>
+        
+        <div class="cancel-button-container">
+            <button class="cancel-button" onclick="window.location.href='menu_principal.html'">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
